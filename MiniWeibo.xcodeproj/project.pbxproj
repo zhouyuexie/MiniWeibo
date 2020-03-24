@@ -8,15 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		891CF8EB241F24BD0089648B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891CF8EA241F24BD0089648B /* AppDelegate.swift */; };
-		891CF8ED241F24BD0089648B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891CF8EC241F24BD0089648B /* SceneDelegate.swift */; };
-		891CF8EF241F24BD0089648B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891CF8EE241F24BD0089648B /* ViewController.swift */; };
-		891CF8F2241F24BD0089648B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891CF8F0241F24BD0089648B /* Main.storyboard */; };
 		891CF8F4241F24BE0089648B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 891CF8F3241F24BE0089648B /* Assets.xcassets */; };
-		891CF8F7241F24BE0089648B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891CF8F5241F24BE0089648B /* LaunchScreen.storyboard */; };
 		891CF902241F24BE0089648B /* MiniWeiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891CF901241F24BE0089648B /* MiniWeiboTests.swift */; };
 		891CF90D241F24BE0089648B /* MiniWeiboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891CF90C241F24BE0089648B /* MiniWeiboUITests.swift */; };
-		891CF95E2428B8800089648B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891CF95D2428B8800089648B /* Alamofire.framework */; };
-		891CF95F2428B8800089648B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 891CF95D2428B8800089648B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		891CF9622428C24D0089648B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891CF95D2428B8800089648B /* Alamofire.framework */; };
+		891CF9632428C24D0089648B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 891CF95D2428B8800089648B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		891CF9662428FC9F0089648B /* Model in Resources */ = {isa = PBXBuildFile; fileRef = 891CF9652428FC9F0089648B /* Model */; };
+		891CF96E24299E0A0089648B /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891CF96D24299E0A0089648B /* SDWebImage.framework */; };
+		891CF96F24299E0A0089648B /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 891CF96D24299E0A0089648B /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D51AD0D7A815DCE86BC41836 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51AD6FD29A49392053006AC /* Photo.swift */; };
+		D51AD56D99D596BEB1959EA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D51AD88E207EAB42CA7C2E1C /* LaunchScreen.storyboard */; };
+		D51AD70C006307624E97D875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D51AD9CEB77AB7868E978B75 /* Main.storyboard */; };
+		D51AD7B93BA8D606FB82B896 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51AD1823843CA3A363A174A /* MainViewController.swift */; };
+		D51AD83ADF9F962A498D4F66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51ADB181F34F1C5A7030467 /* SceneDelegate.swift */; };
+		D51ADC9BEA028C661F9D4958 /* PhotoVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51AD5283E265CFA914EBD3A /* PhotoVIewModel.swift */; };
+		D51ADDB721441A90A9864C25 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51AD7C10767643FB5E93E78 /* DataService.swift */; };
+		D51ADDC56A9FD3459100F533 /* AFSString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51AD78CFF81E8EEDF4F96F9 /* AFSString+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		891CF9602428B8800089648B /* Embed Frameworks */ = {
+		891CF9642428C24D0089648B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				891CF95F2428B8800089648B /* Alamofire.framework in Embed Frameworks */,
+				891CF96F24299E0A0089648B /* SDWebImage.framework in Embed Frameworks */,
+				891CF9632428C24D0089648B /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,11 +61,7 @@
 /* Begin PBXFileReference section */
 		891CF8E7241F24BD0089648B /* MiniWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		891CF8EA241F24BD0089648B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		891CF8EC241F24BD0089648B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		891CF8EE241F24BD0089648B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		891CF8F1241F24BD0089648B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		891CF8F3241F24BE0089648B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		891CF8F6241F24BE0089648B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		891CF8F8241F24BE0089648B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		891CF8FD241F24BE0089648B /* MiniWeiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniWeiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		891CF901241F24BE0089648B /* MiniWeiboTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniWeiboTests.swift; sourceTree = "<group>"; };
@@ -67,6 +71,16 @@
 		891CF90E241F24BE0089648B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		891CF9592428B7EE0089648B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = MiniWeibo.xcodeproj/Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		891CF95D2428B8800089648B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		891CF9652428FC9F0089648B /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
+		891CF96D24299E0A0089648B /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
+		D51AD1823843CA3A363A174A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D51AD5283E265CFA914EBD3A /* PhotoVIewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoVIewModel.swift; sourceTree = "<group>"; };
+		D51AD5D4117770E473590231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D51AD6FD29A49392053006AC /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		D51AD78CFF81E8EEDF4F96F9 /* AFSString+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AFSString+Extension.swift"; sourceTree = "<group>"; };
+		D51AD7C10767643FB5E93E78 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		D51ADA2D5CB2AB9EB7BBEA7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D51ADB181F34F1C5A7030467 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				891CF95E2428B8800089648B /* Alamofire.framework in Frameworks */,
+				891CF96E24299E0A0089648B /* SDWebImage.framework in Frameworks */,
+				891CF9622428C24D0089648B /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,13 +134,18 @@
 		891CF8E9241F24BD0089648B /* MiniWeibo */ = {
 			isa = PBXGroup;
 			children = (
-				891CF8EA241F24BD0089648B /* AppDelegate.swift */,
-				891CF8EC241F24BD0089648B /* SceneDelegate.swift */,
-				891CF8EE241F24BD0089648B /* ViewController.swift */,
-				891CF8F0241F24BD0089648B /* Main.storyboard */,
-				891CF8F3241F24BE0089648B /* Assets.xcassets */,
-				891CF8F5241F24BE0089648B /* LaunchScreen.storyboard */,
+				891CF9742429BEDA0089648B /* Extension */,
+				D51AD93CA7BCFD51F062261E /* Model */,
+				891CF9732429BB2C0089648B /* ViewModel */,
+				891CF9722429BB200089648B /* ViewController */,
+				891CF9712429BAE80089648B /* Service */,
+				891CF9652428FC9F0089648B /* Model */,
 				891CF8F8241F24BE0089648B /* Info.plist */,
+				891CF8EA241F24BD0089648B /* AppDelegate.swift */,
+				891CF8F3241F24BE0089648B /* Assets.xcassets */,
+				D51AD88E207EAB42CA7C2E1C /* LaunchScreen.storyboard */,
+				D51AD9CEB77AB7868E978B75 /* Main.storyboard */,
+				D51ADB181F34F1C5A7030467 /* SceneDelegate.swift */,
 			);
 			path = MiniWeibo;
 			sourceTree = "<group>";
@@ -151,10 +171,51 @@
 		891CF9582428B7EE0089648B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				891CF96D24299E0A0089648B /* SDWebImage.framework */,
 				891CF95D2428B8800089648B /* Alamofire.framework */,
 				891CF9592428B7EE0089648B /* Alamofire.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		891CF9712429BAE80089648B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D51AD7C10767643FB5E93E78 /* DataService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		891CF9722429BB200089648B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D51AD1823843CA3A363A174A /* MainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		891CF9732429BB2C0089648B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D51AD5283E265CFA914EBD3A /* PhotoVIewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		891CF9742429BEDA0089648B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D51AD78CFF81E8EEDF4F96F9 /* AFSString+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D51AD93CA7BCFD51F062261E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D51AD6FD29A49392053006AC /* Photo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,8 +228,8 @@
 				891CF8E3241F24BD0089648B /* Sources */,
 				891CF8E4241F24BD0089648B /* Frameworks */,
 				891CF8E5241F24BD0089648B /* Resources */,
-				891CF9602428B8800089648B /* Embed Frameworks */,
 				891CF9612428B9160089648B /* ShellScript */,
+				891CF9642428C24D0089648B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,9 +324,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				891CF8F7241F24BE0089648B /* LaunchScreen.storyboard in Resources */,
 				891CF8F4241F24BE0089648B /* Assets.xcassets in Resources */,
-				891CF8F2241F24BD0089648B /* Main.storyboard in Resources */,
+				891CF9662428FC9F0089648B /* Model in Resources */,
+				D51AD70C006307624E97D875 /* Main.storyboard in Resources */,
+				D51AD56D99D596BEB1959EA6 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +350,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		891CF9612428B9160089648B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputFileListPaths = (
@@ -301,9 +363,9 @@
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
 			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/Carthage copy-frameworks\n";
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = "/usr/local/bin/Carthage copy-frameworks";
+			shellScript = "\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -312,9 +374,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				891CF8EF241F24BD0089648B /* ViewController.swift in Sources */,
 				891CF8EB241F24BD0089648B /* AppDelegate.swift in Sources */,
-				891CF8ED241F24BD0089648B /* SceneDelegate.swift in Sources */,
+				D51AD0D7A815DCE86BC41836 /* Photo.swift in Sources */,
+				D51ADDB721441A90A9864C25 /* DataService.swift in Sources */,
+				D51AD7B93BA8D606FB82B896 /* MainViewController.swift in Sources */,
+				D51ADC9BEA028C661F9D4958 /* PhotoVIewModel.swift in Sources */,
+				D51ADDC56A9FD3459100F533 /* AFSString+Extension.swift in Sources */,
+				D51AD83ADF9F962A498D4F66 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,20 +416,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		891CF8F0241F24BD0089648B /* Main.storyboard */ = {
+		D51AD88E207EAB42CA7C2E1C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				891CF8F1241F24BD0089648B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		891CF8F5241F24BE0089648B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				891CF8F6241F24BE0089648B /* Base */,
+				D51AD5D4117770E473590231 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D51AD9CEB77AB7868E978B75 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D51ADA2D5CB2AB9EB7BBEA7D /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
